@@ -7,7 +7,7 @@ A simple quiz application built with HTML, CSS, and JavaScript.
 - Responsive design
 
 ## Demo
-[Live Demo](https://username.github.io/quiz-app/)
+[Live Demo](https://github.com/Chjaya2005/quiz-app.git)
 
 ## Screenshots
 ![Quiz Screenshot](screenshot.png)
