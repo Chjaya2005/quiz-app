@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Topic Quiz Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION WITH LOGO -->
+<header>
+<div class ="header-container">
+  <div class="logo-container">
+    <img src="https://c8.alamy.com/comp/2ABNAN7/green-check-mark-icon-in-a-circle-tick-symbol-in-green-color-2ABNAN7.jpg" alt="Quiz Logo" class="logo">
+    <span class = "app-name">QuizMaster</span>
+  </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('quiz')">Quiz</a></li>
+        <li><a href="#" onclick="showSection('result')">Certificate</a></li>
+      </ul>
+    </nav>
+</div>
+</header>
+<!-- INTRODUCTION / ABOUT SECTION -->
+<section class="intro">
+  <h2>Welcome to QuizMaster Pro!</h2>
+  <p>
+    QuizMaster Pro is a multi-topic quiz platform designed to test and improve your knowledge in a variety of subjects. 
+    Challenge yourself in <strong>Aptitude, Reasoning, Python, Java, C, R Programming, and Front-End Development</strong>.
+  </p>
+  <p>Features include:</p>
+  <div class = "features-list"></div>
+    <ul>
+      <li>Interactive quizzes with timer and progress bar</li>
+      <li>Dynamic certificate of completion with grade and score</li>
+      <li>Restart option to improve your score</li>
+      <li>Clean and responsive design that runs directly in your browser</li>
+    </ul>
+  </div>
+  <p>Get ready to test your skills and track your progress!</p>
+</section>
+
+
+
+
+<!-- HOME PAGE -->
+<div id="home" class="card-container">
+  <!-- Cards here remain same as before -->
+  <div class="card">
+    <h2>Aptitude Quiz</h2>
+    <p>Test your numerical and logical skills</p>
+    <button onclick="startQuiz('aptitude')">Start Quiz</button>
+  </div>
+  <div class="card">
+    <h2>Reasoning Quiz</h2>
+    <p>Test your analytical thinking</p>
+    <button onclick="startQuiz('reasoning')">Start Quiz</button>
+  </div>
+  <div class="card">
+    <h2>Python Quiz</h2>
+    <p>Test Python fundamentals</p>
+    <button onclick="startQuiz('python')">Start Quiz</button>
+  </div>
+  <div class="card">
+    <h2>Java Quiz</h2>
+    <p>Test Java programming basics</p>
+    <button onclick="startQuiz('java')">Start Quiz</button>
+  </div>
+  <div class="card">
+    <h2>C Quiz</h2>
+    <p>Test C programming fundamentals</p>
+    <button onclick="startQuiz('c')">Start Quiz</button>
+  </div>
+  <div class="card">
+    <h2>R Programming Quiz</h2>
+    <p>Test R programming basics</p>
+    <button onclick="startQuiz('r')">Start Quiz</button>
+  </div>
+  <div class="card">
+    <h2>Front-End Development Quiz</h2>
+    <p>Test HTML, CSS & JS knowledge</p>
+    <button onclick="startQuiz('frontend')">Start Quiz</button>
+  </div>
+</div>
+
+<!-- QUIZ PAGE -->
+<div id="quiz" style="display:none">
+  <div id="progress">
+    <div id="bar"></div>
+  </div>
+  <p id="timer">Time: 15</p>
+  <h2 id="question"></h2>
+  <ul id="options"></ul>
+</div>
+
+<!-- CERTIFICATE PAGE -->
+<div id="result" style="display:none" class="certificate">
+  <h1>🎓 Certificate of Completion</h1>
+  <p>This certifies that</p>
+  <h2 id="username"></h2>
+  <p>has successfully completed the quiz</p>
+  <p>Score: <span id="score"></span></p>
+  <p>Percentage: <span id="percentage"></span>%</p>
+  <p>Grade: <span id="grade"></span></p>
+
+  <button onclick="window.print()">🖨 Print Certificate</button>
+  <button onclick="location.reload()">Restart Quiz</button>
+</div>
+
+<script src="script.js"></script>
+<script>
+  function showSection(sectionId) {
+    document.getElementById("home").style.display = "none";
+    document.getElementById("quiz").style.display = "none";
+    document.getElementById("result").style.display = "none";
+    document.getElementById(sectionId).style.display = "block";
+  }
+</script>
+<!-- TERMS AND CONDITIONS -->
+<section class="terms">
+  <h2>Terms and Conditions</h2>
+  <p>
+    By using QuizMaster Pro, you agree to the following terms:
+  </p>
+  <ul>
+    <li>All quiz content is for educational purposes only.</li>
+    <li>Users are responsible for their own account and data.</li>
+    <li>Unauthorized distribution or copying of the content is prohibited.</li>
+    <li>The platform may collect anonymous usage data to improve the service.</li>
+    <li>QuizMaster Pro is not liable for any misuse or incorrect results.</li>
+  </ul>
+  <p>Thank you for using QuizMaster Pro responsibly!</p>
+</section>
+
+
+</body>
+</html>
