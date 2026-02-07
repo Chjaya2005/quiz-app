@@ -15,6 +15,6 @@ This project demonstrates front-end development skills, DOM manipulation, and us
 ---
 
 🛠️ Technologies Used
-HTML5 for structure
-CSS3 for styling
-JavaScript (ES6) for logic and interactivity
+- HTML5 for structure
+- CSS3 for styling
+- JavaScript (ES6) for logic and interactivity
