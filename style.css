@@ -1,0 +1,263 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  text-align: center;
+}
+
+/* HEADER WITH LOGO */
+header {
+  background-color: #4CAF50;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding:5px 20px;
+}
+/* header layout */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  }
+
+.logo {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px; /* space between logo and name */
+
+}
+.app-name {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+/* Navigation links centered */
+nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 10px;
+  display: inline-block;
+}
+
+.nav-links a:hover {
+  background-color: #45a049;
+  border-radius: 5px;
+}
+/* 3. INTRODUCTION / ABOUT SECTION */
+.intro {
+  background-color: #e8f5e9;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.intro h2 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 10px auto;
+}
+.intro p:first-of-type {
+  text-align: center; /* The "Features include:" text stays centered */
+  margin-bottom: 10px;
+}
+
+
+.intro ul {
+  list-style: disc;
+  text-align: left;
+  max-width: 600px;
+  margin: 10px auto;
+  padding-left: 20px;
+}
+
+.intro li {
+  margin-bottom: 8px;
+}
+.features-list {
+  text-align: left;       /* Align the list to the left */
+  max-width: 600px;       /* Keep it same width as paragraph */
+  margin: 0 auto 20px auto; /* Center block horizontally with bottom spacing */
+}
+
+.features-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+
+.main-title {
+  padding: 20px;
+  color: #333;
+}
+
+/* Home cards container with 3 columns */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#options {
+  padding: 0;
+  margin: 20px 0;
+}
+
+#options li {
+  list-style: none;
+  background: #ddd;
+  margin: 8px auto;
+  padding: 12px;
+  width: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#options li:hover {
+  background: #ccc;
+}
+
+#progress {
+  width: 300px;
+  height: 12px;
+  background: #ccc;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+
+#bar {
+  height: 100%;
+  width: 0%;
+  background: #4CAF50;
+  border-radius: 6px;
+  transition: width 0.3s;
+}
+
+#timer {
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.certificate {
+  border: 4px solid #4CAF50;
+  background: #fff;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.certificate h1 {
+  color: #4CAF50;
+}
+
+.certificate button {
+  margin-top: 15px;
+}
+.terms {
+  background-color: #f0f4f8;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 2px solid #4CAF50;
+  margin-top: 40px;
+}
+
+.terms h2 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.terms p {
+  font-size: 14px;
+  color: #333;
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.6;
+}
+
+.terms ul {
+  list-style: disc;
+  text-align: left;
+  max-width: 600px;
+  margin: 10px auto;
+  padding-left: 20px;
+}
+
+.terms li {
+  margin-bottom: 8px;
+}
